@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ts-question.git-sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>cd "/Users/jane-m4/Desktop/claude_dev/TypeScript 专项题库" &amp;&amp; git add -A &amp;&amp; git commit -m "Auto sync $(date +%Y-%m-%d)" &amp;&amp; git push origin main 2>&amp;1 || true</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>10</integer>
+        <key>Minute</key>
+        <integer>2</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/jane-m4/Desktop/claude_dev/TypeScript 专项题库/logs/git-sync.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/jane-m4/Desktop/claude_dev/TypeScript 专项题库/logs/git-sync.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

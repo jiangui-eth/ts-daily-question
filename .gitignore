@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+.vercel/
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+.env.production
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# Logs
+*.log
+logs/
+!logs/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.vercel
